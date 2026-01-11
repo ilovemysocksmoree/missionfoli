@@ -202,7 +202,7 @@ const DiaryPage: React.FC = () => {
               <div className="grid__item">
                 <BurnReveal />
                 <figcaption className="quotes">
-                  Hello, I am Hana Sachiko
+                  Hello, I am Diya Karmacharya
                 </figcaption>
               </div>
               <h1 data-hover="Lyra Haruto" id="printemps">
@@ -823,7 +823,7 @@ const DiaryPage: React.FC = () => {
               dream in color and speak in the language of possibility. We are
               friends to the new, guardians of the spark of innovation, and
               believers in the power of storytelling to transcend, transform,
-              and transport. Here, within the walls of The Hana Sachiko Company,
+              and transport. Here, within the walls of The Diya Karmacharya Company,
               greatness is not just recognized — it is expected, nurtured, and
               celebrated, for it can, indeed, come from anywhere.
               <br /> <br />

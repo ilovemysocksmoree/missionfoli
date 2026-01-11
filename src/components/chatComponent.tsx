@@ -10,15 +10,15 @@ import ThreeCanvas from "./ps1/nes"
 
 export const ChatComponent = ({inputRef, containerRef}) => {
   const [placeholder, setPlaceholder] = useState(
-    "Talk to Hana Sachiko or type “help” if you are lost …",
+    "Talk to Diya Karmacharya or type \"help\" if you are lost …",
   )
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 555) {
-        setPlaceholder("Talk to Hana Sachiko or type “help”")
+        setPlaceholder("Talk to Diya Karmacharya or type \"help\"")
       } else {
-        setPlaceholder("Talk to Hana Sachiko or type “help” if you are lost …")
+        setPlaceholder("Talk to Diya Karmacharya or type \"help\" if you are lost …")
       }
     }
 

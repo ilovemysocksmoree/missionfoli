@@ -143,9 +143,9 @@ const DiaryPage = ({}) => {
   const [displayImageSrc, setDisplayImageSrc] = React.useState<string | null>(
     null,
   )
-  const soundPaths = ["yahou.mp3"]
+  const soundPaths = ["whatdog.mp3"]
   const imagePaths = [
-    "chicken.png",
+    "egg-head.png",
     "hello.gif",
     "lyrawalk2.gif",
     "luigitoadpeach.png",
@@ -237,7 +237,7 @@ const DiaryPage = ({}) => {
               <div className="flex flex-row justify-between">
                 <a
                   className="btnContact"
-                  href="https://www.instagram.com/daedalium/"
+                  href="https://www.instagram.com/none/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -336,7 +336,7 @@ const DiaryPage = ({}) => {
                 Hello
               </div>
               <div className="text-7xl max-[760px]:text-5xl uppercase font-light pb-8">
-                Hana Sachiko
+                Diya Karmacharya
               </div>
               {(isSuccess && (
                 <div className="mt-12 text-sm text-left text-green-500">
@@ -367,7 +367,7 @@ const DiaryPage = ({}) => {
                     </div>
                     <div className="mc-field-group">
                       <label htmlFor="mce-FROM">
-                        I heard about Hana Sachiko{" "}
+                        I heard about Diya Karmacharya{" "}
                       </label>
                       <select name="FROM" className="" id="mce-FROM">
                         <option></option>
@@ -481,7 +481,7 @@ const DiaryPage = ({}) => {
             <div className="uppercase"></div>{" "}
             <div className="uppercase">
               made with love by
-              <br /> Hana Sachiko
+              <br /> Diya Karmacharya
             </div>{" "}
             <div className="uppercase">
               <a
@@ -516,7 +516,7 @@ const DiaryPage = ({}) => {
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
               <div className="text-7xl text-center uppercase relative z-10">
-                Hana Sachiko - 花·幸子{" "}
+                Diya Karmacharya - 花·幸子{" "}
                 <span>
                   <img
                     src="lyrawalk2.gif"

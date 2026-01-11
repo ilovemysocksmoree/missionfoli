@@ -1,4 +1,4 @@
-# The Hana Sachiko Company
+# The Diya Karmacharya Company
 
 ![Aperçu du projet](public/hanavisu800x600.png)
 

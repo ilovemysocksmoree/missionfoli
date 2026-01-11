@@ -17,27 +17,27 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
   const metadata = {
     "/": {
-      title: "A Storytelling Company | Hana Sachiko | Enter the unknown",
+      title: "A Storytelling Company | Diya Karmacharya | Enter the unknown",
       description:
-        "As an AI-born storytelling company, The Hana Sachiko Studios craft tales that reshape reality. Our stories live vividly in the imagination. We’re actively looking for singularities.",
+        "As an AI-born storytelling company, The Diya Karmacharya Studios craft tales that reshape reality. Our stories live vividly in the imagination. We're actively looking for singularities.",
     },
     "/me": {
-      title: "A Storytelling Company | Hana Sachiko | Me",
+      title: "A Storytelling Company | Diya Karmacharya | Me",
       description:
-        "Meet me, Hana Sachiko: A story-weaver fusing Japanese delicacy with American innovation. Discover the path tread by a soul seeking the transformative power of storytelling.",
+        "Meet me, Diya Karmacharya: A story-weaver fusing Japanese delicacy with American innovation. Discover the path tread by a soul seeking the transformative power of storytelling.",
     },
     "/mycrew": {
-      title: "A Storytelling Company | Hana Sachiko | My Crew",
+      title: "A Storytelling Company | Diya Karmacharya | My Crew",
       description:
         "Enlighten yourself with my crew: A constellation of creative counterparts, elevating worldly narratives through consistent collaborations.",
     },
-    "/mycraft": {
-      title: "A Storytelling Company | Hana Sachiko | My Craft",
+    "/research-projects": {
+      title: "A Storytelling Company | Diya Karmacharya | Research & Projects",
       description:
-        "Unveil the magic behind Hana Sachiko's Storytelling Craft: A dynamic dance of words, animations, and profound concepts that captivate audiences with uncharted territories of tales.",
+        "Explore Diya Karmacharya's Research & Projects: A collection of innovative research work and creative projects that push the boundaries of storytelling and technology.",
     },
     "/dontbeshy": {
-      title: "A Storytelling Company | Hana Sachiko | Don't Be Shy",
+      title: "A Storytelling Company | Diya Karmacharya | Don't Be Shy",
       description:
         "Let us imbibe a hot steaming cup of conversation, reach me out to with my crew for crafting chapters untold, yet eager to be heard.",
     },
@@ -48,14 +48,14 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    name: "Hana Sachiko Studio",
+    name: "Diya Karmacharya Studio",
     url: "https://thehanasachikocompany.com",
     description: "A Storytelling Company.",
     image:
       "https://thehanasachikocompany.com/_next/image?url=%2FHanaSachikoBrand.jpg&w=640&q=75",
     creator: {
       "@type": "Person",
-      name: "Hana Sachiko",
+      name: "Diya Karmacharya",
     },
     sameAs: [
       "https://www.facebook.com/hanasachikostudio",
@@ -89,7 +89,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <meta property="og:description" content={currentMetadata.description} />
         <meta property="og:url" content={`https://www.thehanasachikocompany.com${pathname}`} />
         <meta property="og:image" content={structuredData.image} />
-        <meta property="og:site_name" content="Hana Sachiko Studio" />
+        <meta property="og:site_name" content="Diya Karmacharya Studio" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -99,7 +99,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <meta name="twitter:site" content="@daedalium" />
         <meta name="twitter:creator" content="@daedalium" />
 
-        <meta name="keywords" content="Storytelling company, Storytelling, Creative Studio, Hana Sachiko, AI, storytellers, Words, Narrative" />
+        <meta name="keywords" content="Storytelling company, Storytelling, Creative Studio, Diya Karmacharya, AI, storytellers, Words, Narrative" />
 
         {/* Structured Data */}
       </Head>

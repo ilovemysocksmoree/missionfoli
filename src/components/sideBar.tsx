@@ -172,9 +172,9 @@ function Sidebar() {
   ]
 
   const linksData = [
-    {originalText: "#Me", emoji: "😜", href: "/me", target: "_self"},
-    {originalText: "My Crew", emoji: "🥷", href: "/mycrew", target: "_self"},
-    {originalText: "My Craft", emoji: "🤖", href: "/mycraft", target: "_self"},
+    {originalText: "#Me", emoji: "💤", href: "/me", target: "_self"},
+    {originalText: "My Arsenal", emoji: "🥷", href: "/mycrew", target: "_self"},
+    {originalText: "Research & Projects", emoji: "🔬", href: "/research-projects", target: "_self"},
     // {
     //   originalText: "My Diary",
     //   emoji: "🧝‍♀️",
@@ -296,13 +296,17 @@ function Sidebar() {
   
 
   const texts = [
-    "As AI-born storytellers, The Hana Sachiko Studios craft tales that reshape reality. Our stories live vividly in the imagination. We’re actively looking for singularities.",
-    "AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています。",
+    "As a Security Research Analyst, I architect the frameworks that define modern defense. My work is a cycle of building robust security policies and systematically dismantling them through precision payload crafting and adversarial test cases. By leading deep-dive vulnerability assessments and communicating directly with vendors, I ensure that theoretical security translates into resilient, real-world protection. I don't just find flaws; I engineer the standards that prevent them.",
+    "एक सुरक्षा अनुसन्धान विश्लेषकको रूपमा, म मजबुत सुरक्षा नीतिहरू निर्माण गर्छु र तिनीहरूलाई विभिन्न पेलोड र परीक्षणहरूद्वारा चुनौती दिन्छु। मेरो कार्यको मुख्य उद्देश्य अभेद्य नीतिहरू बनाउनु र तिनलाई तोड्ने प्रयास गरेर थप सुरक्षित बनाउनु हो। नेतृत्वदायी भूमिकामा रहेर गरिने पेन्टेस्टिङ, जोखिम मूल्याङ्कन, र भेन्डरहरूसँगको समन्वयमार्फत म सैद्धान्तिक सुरक्षालाई वास्तविक जगतको प्रतिरक्षामा बदल्छु। म कमजोरीहरू मात्र पत्ता लगाउँदिन, म ती मापदण्डहरू तयार गर्छु जसले सुरक्षालाई सुनिश्चित गर्दछ।",
   ]
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handleMouseEnter = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length)
+    setCurrentIndex(1) // Show Nepali text on hover
+  }
+
+  const handleMouseLeave = () => {
+    setCurrentIndex(0) // Show English text when not hovering
   }
 
   const MobileSidebarToggle = ({onClick}) => (
@@ -343,22 +347,17 @@ function Sidebar() {
           <nav className="flex h-full w-full flex-col pb-1 justify-between">
             <div className="relative pr-2 pt-2 text-s font-medium text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600">
               <a href="/">
-                <Image
-                  src="/HanaSachikoBrand.png"
-                  id="Hana"
-                  className="brand px-2 mt-3 mb-4"
-                  alt="Brand logo from Hana Sachiko"
-                  width={194}
-                  height={194}
-                  priority={true}
-                />
+                <div className="px-2 mt-3 mb-4">
+                  <h1 className="text-2xl font-bold text-white uppercase tracking-wide">Diya <br />armacharya</h1>
+                </div>
               </a>
 
               <div
                 className="relative pb-2 pt-3 px-2 text-s text-ellipsis break-all bg-white dark:bg-black text-gizmo-gray-600 break-words text-justify"
                 id="sideBarText"
                 onMouseEnter={handleMouseEnter}
-                data-enter="AI生まれの語り手である株式会社ライラー・ハルトは、現実の形を変える物語を作ります。<br/> 私たちの物語は想像力の中で活動的に存在し、独自性を積極的に求めています。"
+                onMouseLeave={handleMouseLeave}
+                data-enter="एक सुरक्षा अनुसन्धान विश्लेषकको रूपमा, म मजबुत सुरक्षा नीतिहरू निर्माण गर्छु र तिनीहरूलाई विभिन्न पेलोड र परीक्षणहरूद्वारा चुनौती दिन्छु। मेरो कार्यको मुख्य उद्देश्य अभेद्य नीतिहरू बनाउनु र तिनलाई तोड्ने प्रयास गरेर थप सुरक्षित बनाउनु हो। नेतृत्वदायी भूमिकामा रहेर गरिने पेन्टेस्टिङ, जोखिम मूल्याङ्कन, र भेन्डरहरूसँगको समन्वयमार्फत म सैद्धान्तिक सुरक्षालाई वास्तविक जगतको प्रतिरक्षामा बदल्छु। म कमजोरीहरू मात्र पत्ता लगाउँदिन, म ती मापदण्डहरू तयार गर्छु जसले सुरक्षालाई सुनिश्चित गर्दछ।"
               >
                 {texts[currentIndex]}
               </div>

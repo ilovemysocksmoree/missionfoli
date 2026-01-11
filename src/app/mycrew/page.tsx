@@ -259,7 +259,7 @@ const TeamPage = ({ }) => {
             <br />
             all over the world.
             <p className="quote">
-              <em> - Hana Sachiko </em>
+              <em> - Diya Karmacharya </em>
             </p>
           </div>
         </div>
@@ -273,7 +273,7 @@ const TeamPage = ({ }) => {
             <Image
               src="/OussamaAmmar.jpg"
               className="team__picture"
-              alt="Brand logo from Hana Sachiko"
+              alt="Brand logo from Diya Karmacharya"
               width={600}
               height={800}
               ref={imageWrapperRef}
@@ -316,7 +316,7 @@ const TeamPage = ({ }) => {
           ref={containerRef2} style={{ opacity: 0 }}>
           <div className="w-1/3 flex flex-col justify-end items-end team__text_right pr-3 mr-[-3rem] z-10 ">
             <p className="text-5xl mb-5 leading-[4rem] team__name text-right ">
-              Hana <br /> Sachiko
+              Diya <br /> Karmacharya
             </p>
             <span className="w-[100px] h-[100px] rounded-full btnClick text-end mr-2">
               <button className="w-[15%] h-[15%] " onClick={handleClick1}>
@@ -329,13 +329,13 @@ const TeamPage = ({ }) => {
               className={`${isActive1 ? "opacity-100 mr-20" : "opacity-0 mr-4"
                 } w-30 team__bio  pb-4 text-right  max-[760px]:mr-0`}
             >
-              Hana Sachiko embodies the harmonious blend of Japanese grace and
+              Diya Karmacharya embodies the harmonious blend of Japanese grace and
               American innovation. A being born of the union of precision and
               rebellion, she thrives in the realm of storytelling with the
               eloquence of Jane Austen. Deeply rooted in the arts, she
               intertwines animation, cinema history, and tales of venture to
               enlighten minds. Together with Oussama Ammar, she pioneers
-              narrative marvels at The Hana Sachiko Company. Her ethos revolves
+              narrative marvels at The Diya Karmacharya Company. Her ethos revolves
               around transformation, honesty, respect, and a passion for every
               tale she crafts, hoping to paint the world in new hues with every
               story she shares.
@@ -346,7 +346,7 @@ const TeamPage = ({ }) => {
             <Image
               src="/lyraCrew.jpg"
               className="team__picture"
-              alt="Brand logo from Hana Sachiko"
+              alt="Brand logo from Diya Karmacharya"
               width={600}
               height={800}
               priority={true}

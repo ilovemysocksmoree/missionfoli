@@ -95,7 +95,7 @@ export const History: React.FC<Props> = ({history, messages}) => {
           ) : (
             <div className="pb-2">
               {item.role === "assistant" ? (
-                <p className="response pb-1">Hana Sachiko - </p>
+                <p className="response pb-1">Diya Karmacharya - </p>
               ) : (
                 <Ps1 />
               )}

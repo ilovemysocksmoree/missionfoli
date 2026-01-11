@@ -179,6 +179,14 @@ form{
   text-shadow: 0 0 4px #fff;
 }
 
+.lyrart{
+  font-size: 0.7rem; /* Adjust this value to change size (smaller = smaller art) */
+  line-height: 1; /* Adjust line spacing */
+  white-space: pre; /* Preserve ASCII art formatting */
+  /* Alternative: Use transform scale instead of font-size */
+  /* transform: scale(0.8); */ /* 0.8 = 80% size, 1.0 = 100%, 1.2 = 120% */
+}
+
 .response{
   font-family: 'Technor-Variable';
   letter-spacing: .8px;

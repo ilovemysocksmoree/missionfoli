@@ -41,6 +41,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       description:
         "Let us imbibe a hot steaming cup of conversation, reach me out.",
     },
+    "/blog": {
+      title: "A Storytelling Company | Diya Karmacharya | Blog",
+      description:
+        "Read Diya Karmacharya's blog: Security research insights, technical writings, and penetration testing methodologies.",
+    },
   };
 
   const currentMetadata = metadata[pathname] || metadata["/"];
@@ -66,7 +71,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   };
 
   const Global = ({ children }: { children: React.ReactNode }) => (
-    <div className="relative z-0 flex h-full w-full overflow-hidden overflow-y-scroll">
+    <div className="relative z-0 flex h-full w-full overflow-y-scroll">
       {children}
     </div>
   );

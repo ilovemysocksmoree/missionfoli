@@ -74,7 +74,7 @@ const Layout: React.FC<Props> = ({children}) => {
 
   return (
     <div
-      className="terminal relative flex h-full max-w-full flex-1 flex-col overflow-hidden"
+      className="terminal relative flex h-full max-w-full flex-1 flex-col"
       style={{
         color: theme.foreground,
       }}

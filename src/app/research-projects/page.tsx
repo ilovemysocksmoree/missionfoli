@@ -16,6 +16,21 @@ interface Project {
   image?: string
 }
 
+interface Certification {
+  id: string
+  title: string
+  description?: string
+  category: string
+  status: "ACTIVE" | "EXPIRED" | "PENDING" | "VERIFIED"
+  icon: "certificate" | "security" | "cloud" | "network" | "ethical" | "compliance"
+  link?: string
+  image?: string
+  date?: string
+  issuer?: string
+  credentialId?: string
+  validUntil?: string
+}
+
 const ResearchProjectsPage = ({ }) => {
   const { showConfirmation, setShowConfirmation } = useConfirmContext()
 
@@ -27,7 +42,87 @@ const ResearchProjectsPage = ({ }) => {
   }
 
   // Sample projects - replace with your actual projects
-  const projects: Project[] = [
+  // Sample certifications - replace with your actual certifications
+  const certifications: Certification[] = [
+    {
+      id: "CERT001",
+      title: "COMPTIA SECURITY+",
+      description: "Core security skills and knowledge required for cybersecurity professionals",
+      category: "SECURITY",
+      status: "ACTIVE",
+      icon: "security",
+      link: "#",
+      date: "2023-11-15",
+      issuer: "CompTIA",
+      credentialId: "SEC+123456789",
+      validUntil: "2026-11-15",
+    },
+    {
+      id: "CERT002",
+      title: "CERTIFIED ETHICAL HACKER",
+      description: "Ethical hacking and network security assessment certification",
+      category: "ETHICAL HACKING",
+      status: "ACTIVE",
+      icon: "ethical",
+      link: "#",
+      date: "2023-09-20",
+      issuer: "EC-Council",
+      credentialId: "ECC 987654321",
+      validUntil: "2025-09-20",
+    },
+    {
+      id: "CERT003",
+      title: "AWS CERTIFIED SOLUTIONS ARCHITECT",
+      description: "Cloud architecture design and deployment on AWS platform",
+      category: "CLOUD",
+      status: "ACTIVE",
+      icon: "cloud",
+      link: "#",
+      date: "2023-07-10",
+      issuer: "Amazon Web Services",
+      credentialId: "AWS-ASA-456789123",
+      validUntil: "2026-07-10",
+    },
+    {
+      id: "CERT004",
+      title: "CERTIFIED INFORMATION SYSTEMS SECURITY PROFESSIONAL",
+      description: "Advanced information security management and governance",
+      category: "GOVERNANCE",
+      status: "VERIFIED",
+      icon: "compliance",
+      link: "#",
+      date: "2023-05-25",
+      issuer: "(ISC)²",
+      credentialId: "CISSP-789123456",
+      validUntil: "2026-05-25",
+    },
+    {
+      id: "CERT005",
+      title: "NETWORK+ CERTIFICATION",
+      description: "Networking concepts, infrastructure, and operations",
+      category: "NETWORKING",
+      status: "ACTIVE",
+      icon: "network",
+      link: "#",
+      date: "2023-03-15",
+      issuer: "CompTIA",
+      credentialId: "NET+456789123",
+      validUntil: "2026-03-15",
+    },
+    {
+      id: "CERT006",
+      title: "OFFENSIVE SECURITY CERTIFIED PROFESSIONAL",
+      description: "Advanced penetration testing and security assessment",
+      category: "PENETRATION TESTING",
+      status: "PENDING",
+      icon: "certificate",
+      link: "#",
+      date: "2024-01-10",
+      issuer: "Offensive Security",
+      credentialId: "OSCP-123456789",
+      validUntil: "2027-01-10",
+    },
+  ]
     // {
     //   id: "001",
     //   title: "PROJECT_GENESIS",

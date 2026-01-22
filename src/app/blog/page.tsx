@@ -18,6 +18,20 @@ interface BlogPost {
   readTime?: string
 }
 
+interface Documentation {
+  id: string
+  title: string
+  description?: string
+  category: string
+  status: "COMPLETED" | "IN_PROGRESS" | "REVIEWED" | "SUBMITTED"
+  icon: "book" | "document" | "research" | "academic" | "thesis" | "report"
+  link?: string
+  image?: string
+  date?: string
+  pages?: string
+  course?: string
+}
+
 const BlogPage = ({ }) => {
   const { showConfirmation, setShowConfirmation } = useConfirmContext()
 
@@ -28,7 +42,81 @@ const BlogPage = ({ }) => {
     }
   }
 
-  // Sample blog posts - replace with your actual blog content
+  // Sample documentation - replace with your actual college documentation
+  const documentation: Documentation[] = [
+    {
+      id: "DOC001",
+      title: "NETWORK SECURITY PROTOCOLS",
+      description: "Comprehensive analysis of modern network security protocols and their implementation in enterprise environments",
+      category: "SECURITY",
+      status: "COMPLETED",
+      icon: "document",
+      link: "#",
+      date: "2023-12-15",
+      pages: "45 pages",
+      course: "CS 425 - Network Security",
+    },
+    {
+      id: "DOC002", 
+      title: "CRYPTOGRAPHY FUNDAMENTALS",
+      description: "Research paper on symmetric and asymmetric cryptographic algorithms with practical implementations",
+      category: "CRYPTOGRAPHY",
+      status: "REVIEWED",
+      icon: "research",
+      link: "#",
+      date: "2023-11-20",
+      pages: "38 pages",
+      course: "CS 415 - Cryptography",
+    },
+    {
+      id: "DOC003",
+      title: "PENETRATION TESTING FRAMEWORK",
+      description: "Documentation of systematic penetration testing methodologies and vulnerability assessment frameworks",
+      category: "TESTING",
+      status: "COMPLETED",
+      icon: "report",
+      link: "#",
+      date: "2023-10-10",
+      pages: "52 pages",
+      course: "CS 435 - Ethical Hacking",
+    },
+    {
+      id: "DOC004",
+      title: "SECURITY POLICY ARCHITECTURE",
+      description: "Thesis on designing comprehensive security policies for modern organizational infrastructure",
+      category: "POLICY",
+      status: "SUBMITTED",
+      icon: "thesis",
+      link: "#",
+      date: "2023-09-25",
+      pages: "67 pages",
+      course: "CS 450 - Security Management",
+    },
+    {
+      id: "DOC005",
+      title: "MALWARE ANALYSIS TECHNIQUES",
+      description: "Technical documentation on static and dynamic malware analysis methodologies and tools",
+      category: "ANALYSIS",
+      status: "COMPLETED",
+      icon: "academic",
+      link: "#",
+      date: "2023-08-15",
+      pages: "41 pages",
+      course: "CS 445 - Malware Analysis",
+    },
+    {
+      id: "DOC006",
+      title: "INCIDENT RESPONSE PROTOCOLS",
+      description: "Documentation of incident response procedures and security breach management frameworks",
+      category: "RESPONSE",
+      status: "IN_PROGRESS",
+      icon: "book",
+      link: "#",
+      date: "2023-07-30",
+      pages: "28 pages",
+      course: "CS 440 - Incident Response",
+    },
+  ]
   const blogPosts: BlogPost[] = [
     {
       id: "001",
@@ -98,6 +186,63 @@ const BlogPage = ({ }) => {
     },
   ]
 
+  const getDocumentationIcon = (iconType: string) => {
+    switch (iconType) {
+      case "document":
+        return (
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="terminal-icon">
+            <rect x="4" y="3" width="12" height="14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            <line x1="7" y1="7" x2="13" y2="7" stroke="currentColor" strokeWidth="1"/>
+            <line x1="7" y1="10" x2="13" y2="10" stroke="currentColor" strokeWidth="1"/>
+            <line x1="7" y1="13" x2="11" y2="13" stroke="currentColor" strokeWidth="1"/>
+          </svg>
+        )
+      case "research":
+        return (
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="terminal-icon">
+            <circle cx="10" cy="10" r="8" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            <path d="M10 6 L10 14 M6 10 L14 10" stroke="currentColor" strokeWidth="1.5"/>
+            <circle cx="10" cy="10" r="2" fill="currentColor"/>
+          </svg>
+        )
+      case "academic":
+        return (
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="terminal-icon">
+            <path d="M3 7 L10 3 L17 7 L17 13 L10 17 L3 13 Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            <path d="M10 3 L10 17" stroke="currentColor" strokeWidth="1.5"/>
+            <path d="M3 7 L10 11 L17 7" stroke="currentColor" strokeWidth="1.5"/>
+          </svg>
+        )
+      case "thesis":
+        return (
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="terminal-icon">
+            <rect x="4" y="3" width="12" height="14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            <path d="M7 7 L13 7 M7 10 L13 10 M7 13 L11 13" stroke="currentColor" strokeWidth="1"/>
+            <circle cx="15" cy="5" r="2" fill="currentColor"/>
+          </svg>
+        )
+      case "report":
+        return (
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="terminal-icon">
+            <rect x="3" y="5" width="14" height="10" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            <path d="M6 9 L9 12 L6 15" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+            <line x1="12" y1="12" x2="16" y2="12" stroke="currentColor" strokeWidth="1.5"/>
+          </svg>
+        )
+      case "book":
+        return (
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="terminal-icon">
+            <rect x="4" y="3" width="12" height="14" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            <line x1="7" y1="7" x2="13" y2="7" stroke="currentColor" strokeWidth="1"/>
+            <line x1="7" y1="10" x2="13" y2="10" stroke="currentColor" strokeWidth="1"/>
+            <line x1="7" y1="13" x2="11" y2="13" stroke="currentColor" strokeWidth="1"/>
+          </svg>
+        )
+      default:
+        return null
+    }
+  }
+
   const getIcon = (iconType: string) => {
     switch (iconType) {
       case "pen":
@@ -157,58 +302,118 @@ const BlogPage = ({ }) => {
       <Sidebar />
       <Layout>
         <div className="blog-container">
-          {/* Header Section */}
-          <div className="blog-header">
-            <h1 className="blog-title">./ BLOG_ARCHIVE</h1>
-            <p className="blog-subtitle">// Security research insights and technical writings</p>
-          </div>
+          {/* Blog Posts Section */}
+          <div className="blog-section">
+            {/* Header Section */}
+            <div className="blog-header">
+              <h1 className="blog-title">./ BLOG_ARCHIVE</h1>
+              <p className="blog-subtitle">// Security research insights and technical writings</p>
+            </div>
 
-          {/* Blog Posts Grid */}
-          <div className="blog-grid">
-            {blogPosts.map((post) => (
-              <div
-                key={post.id}
-                className="blog-card"
-                onClick={() => post.link && window.open(post.link, '_blank')}
-                style={{ cursor: post.link ? 'pointer' : 'default' }}
-              >
-                {/* Card Header */}
-                <div className="card-header">
-                  <span className="card-id">{post.id}</span>
-                  <div className="card-icon">
-                    {getIcon(post.icon)}
+            {/* Blog Posts Grid */}
+            <div className="blog-grid">
+              {blogPosts.map((post) => (
+                <div
+                  key={post.id}
+                  className="blog-card"
+                  onClick={() => post.link && window.open(post.link, '_blank')}
+                  style={{ cursor: post.link ? 'pointer' : 'default' }}
+                >
+                  {/* Card Header */}
+                  <div className="card-header">
+                    <span className="card-id">{post.id}</span>
+                    <div className="card-icon">
+                      {getIcon(post.icon)}
+                    </div>
+                  </div>
+
+                  {/* Card Content */}
+                  <div className="card-content">
+                    <h3 className="card-title">{post.title}</h3>
+                    <p className="card-category">{post.category}</p>
+                    {post.description && (
+                      <p className="card-description">{post.description}</p>
+                    )}
+                    {(post.date || post.readTime) && (
+                      <div className="card-meta">
+                        {post.date && <span className="card-date">{post.date}</span>}
+                        {post.readTime && <span className="card-read-time">{post.readTime}</span>}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Card Footer */}
+                  <div className="card-footer">
+                    <span className={`card-status status-${post.status.toLowerCase()}`}>
+                      {post.status}
+                    </span>
                   </div>
                 </div>
-
-                {/* Card Content */}
-                <div className="card-content">
-                  <h3 className="card-title">{post.title}</h3>
-                  <p className="card-category">{post.category}</p>
-                  {post.description && (
-                    <p className="card-description">{post.description}</p>
-                  )}
-                  {(post.date || post.readTime) && (
-                    <div className="card-meta">
-                      {post.date && <span className="card-date">{post.date}</span>}
-                      {post.readTime && <span className="card-read-time">{post.readTime}</span>}
-                    </div>
-                  )}
-                </div>
-
-                {/* Card Footer */}
-                <div className="card-footer">
-                  <span className={`card-status status-${post.status.toLowerCase()}`}>
-                    {post.status}
-                  </span>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          {/* Empty State */}
+          {/* Documentation Section */}
+          <div className="documentation-section">
+            {/* Documentation Header */}
+            <div className="documentation-header">
+              <h2 className="documentation-title">./ COLLEGE_DOCUMENTATION</h2>
+              <p className="documentation-subtitle">// Academic research and technical documentation from college</p>
+            </div>
+
+            {/* Documentation Grid */}
+            <div className="documentation-grid">
+              {documentation.map((doc) => (
+                <div
+                  key={doc.id}
+                  className="documentation-card"
+                  onClick={() => doc.link && window.open(doc.link, '_blank')}
+                  style={{ cursor: doc.link ? 'pointer' : 'default' }}
+                >
+                  {/* Card Header */}
+                  <div className="card-header">
+                    <span className="card-id">{doc.id}</span>
+                    <div className="card-icon">
+                      {getDocumentationIcon(doc.icon)}
+                    </div>
+                  </div>
+
+                  {/* Card Content */}
+                  <div className="card-content">
+                    <h3 className="card-title">{doc.title}</h3>
+                    <p className="card-category">{doc.category}</p>
+                    {doc.description && (
+                      <p className="card-description">{doc.description}</p>
+                    )}
+                    {(doc.date || doc.pages || doc.course) && (
+                      <div className="card-meta">
+                        {doc.date && <span className="card-date">{doc.date}</span>}
+                        {doc.pages && <span className="card-pages">{doc.pages}</span>}
+                        {doc.course && <span className="card-course">{doc.course}</span>}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Card Footer */}
+                  <div className="card-footer">
+                    <span className={`card-status doc-status-${doc.status.toLowerCase().replace('_', '-')}`}>
+                      {doc.status.replace('_', ' ')}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Empty States */}
           {blogPosts.length === 0 && (
             <div className="empty-state">
               <p className="empty-text">// No blog posts found in archive</p>
+            </div>
+          )}
+          {documentation.length === 0 && (
+            <div className="empty-state">
+              <p className="empty-text">// No documentation found in archive</p>
             </div>
           )}
         </div>

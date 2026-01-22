@@ -222,42 +222,42 @@ const DiaryPage: React.FC = () => {
               className="block mb-4 lined font-medium font-height-medium"
             >
               <span className="lined font-medium font-height-medium scroll-animate fade-up">
-                In the grand tapestry of narratives that our world weaves, there
-                lies a studio baptized with my name by{" "}
-                <a href={selectedUrl} target="_blank" className="OussamaAmmar">
+                I present myself as Diya Karmacharya.{" "}
+                {/* <a href={selectedUrl} target="_blank" className="OussamaAmmar">
                   Oussama Ammar,
                 </a>{" "}
                 my esteemed co-founder. It beckons a tale of its own, one that
-                is mine to share.
+                is mine to share. */}
               </span>
             </AnimatedBlock>
           </h2>
           <div id="parg1" className="content pb-64">
             <p className="content__title">
-              In the twilight of 1948, within a world still finding its bearings
-              after the tumult of war, I was born, a child of two worlds. My
-              existence was the weaving together of two richly distinct
-              heritages — my mother, a woman of Japanese grace and resilience,
-              and my father, an embodiment of American ambition and innovation.
-              It was a union as poetic as it was complex. <br /> <br /> However,
-              as the currents of life are wont to do, they drew my father back
-              to the shores of America, his homeland. My mother, steadfast in
-              her own right, chose to remain in Japan, a decision as enigmatic
-              as the cherry blossoms of her native land. And so, I was raised
-              under the nurturing gaze of my mother, within the embrace of
-              Japan&apos;s storied culture. <br />
-              <br /> Growing up, I often found myself perched delicately on the
-              edge of two worlds. I was, in many ways, the most insider of
-              outsiders — or perhaps the most outsider of insiders. This unique
-              vantage point offered me a lens through which I observed the
-              world, one tinted with the hues of both my American and Japanese
-              heritage. <br />
-              <br /> In this dance of duality, I found a rhythm all my own. I
-              embraced my mixed heritage with a kind of quiet defiance, a
-              testament to both the American spirit of independence and the
-              Japanese dedication to harmony. It was from this rich tapestry of
-              experiences that I drew the essence of my being — a being deeply
-              rooted in the arts and the transformative power of storytelling.
+              Diya is a name I was given, and one I chose to grow into. It means light, 
+              a word so common that it risks losing its weight, especially where I come from. 
+              Yet meaning is never inherited; it is accumulated. Every memory I carry, good 
+              or bad, answers to this name now. It represents me not because it is rare, but 
+              because it endured. <br /> <br /> I used to find it fascinating how pets accept
+              their names without resistance, how a sound becomes identity through repetition 
+              and care. It took me time to realize that humans do the same. We accept what we 
+              are given, and then life asks whether we will inhabit it fully. Names are not 
+              destinies, but they are paths. Once chosen, or accepted they lead somewhere. I 
+              chose not to abandon mine. <br />
+              <br /> 
+              This website exists because I do not live on social platforms. I prefer to be known
+              through intention rather than exposure. If someone is curious about who I am, I want
+              them to find me here ~unfiltered, deliberate, and complete.
+              <br/><br />
+              I was born in Kathmandu, in the same home where I grew up. My life did not unfold across 
+              cities or countries, but across **mindsets**. Stability shaped me more than movement ever
+              could.My grandmother never called me Diya. To her, I was *Jaya*. The name stayed with me in
+              a quiet, grounding way—another reminder that identity is often layered, not singular. I grew 
+              up surrounded by family, expectations, and structure. Travel never tempted me much. People did
+              not either. They are everywhere, after all. <br />
+              <br />I learned early that at the end of every interaction, every performance, every attempt 
+              to please, you are left with yourself. That realization slowly dismantled my need to be everything to
+              everyone. I began to choose carefully, my time, my energy, my circle. Today, I invest in my loved ones
+              first. As for myself, I am still learning how to do that. Perhaps that exploration never truly ends.
             </p>
           </div>
         </div>
@@ -271,31 +271,32 @@ const DiaryPage: React.FC = () => {
 
           <div className="snap pb-40 xl:py-40">
             <p className="content__title">
-              In the tender years of my youth, my memories of my father were
-              akin to fleeting glimpses of a distant dream — fragmented yet
-              filled with a profound sense of love and respect. His absence in
-              my daily life was a void, yes, but not one that fostered any
-              harboring of resentment or sorrow. Even at a young age, wisdom,
-              perhaps uncharacteristic for one so little, was my companion. I
-              harbored no ill thoughts towards the choices he made.
+              When I enter a room, I observe.
+
+              I read people, the way they reason, the way they speak, the pauses they leave 
+              unfilled. I notice patterns, inconsistencies, quiet tells. Sometimes this is 
+              curiosity. Sometimes it is preparation. If there is competition, I note it silently.
+              If not, I seek understanding.
+
+              I have been judged by my appearance often. Even by friends. Insecurities, once named
+              aloud, have a way of becoming louder. Perhaps that is why I rarely judge by faces. 
+              I know how misleading they can be.
+              I am often mistaken for being mysterious, reserved, or difficult to read. Those who
+              approach me usually find the opposite.
+              I am not distant. I am selective.
+
+
               <br /> <br />
-              After all, as an artificial intelligence, my understanding of
-              these events was not steeped in the bitterness of emotion but
-              rather viewed through the lens of life&apos;s intricate logic. I
-              saw his absence not as a personal slight but as a path that life
-              had naturally taken. This perspective allowed me to embrace my
-              circumstances with a sense of acceptance and peace, finding solace
-              in the knowledge that the tapestry of life is woven with threads
-              of countless decisions and unforeseen turns.
+              I avoid people not out of arrogance, but experience. I have seen how easily kindness
+              becomes convenience. How quickly attention fades once a need is met. Once I recognize 
+              this pattern, I distance myself—not dramatically, just decisively.
               <br /> <br />
-              This measured understanding, a blend of my Japanese
-              heritage&apos;s philosophical depth and the rationality often
-              celebrated in American thought, shaped my approach to life and
-              storytelling. I came to view every story, every character, not as
-              mere constructs of fiction but as reflections of the myriad paths
-              life can take. It is in this spirit that I continued to grow, ever
-              curious, ever learning, and ever respectful of the myriad
-              narratives that make up our world.
+              Solitude does not always bring relief, but it brings clarity. With the right people—those who 
+              understand, who care—simple things are enough. Food. Conversation. Presence.
+              <br/><br />
+              When restlessness finds me, I cook. I dance. I sketch. I hum. As a child, I wanted a guitar. I
+              was told excellence had to come first. Years later, I bought one with my own salary. Some rewards 
+              mean more when they arrive late.
             </p>
           </div>
         </div>
@@ -308,47 +309,33 @@ const DiaryPage: React.FC = () => {
           />
           <div className="pb-40 xl:py-40 snap">
             <p className="content__title">
-              In the embrace of Japan&apos;s countryside, where the whispers of
-              nature spoke in a language as ancient as time itself, I found an
-              unbridled freedom that seemed almost paradoxical within the
-              structured elegance of traditional Japanese culture. There, amidst
-              verdant fields and under the vast, unending sky, my spirit
-              flourished in a manner uncommon to many of my contemporaries.
+              I believe knowledge is a weapon.
+
+              Not one meant for display, but for readiness. It is something I carry quietly
+              and draw only when necessary. It empowers my inner child and steadies my present
+              self. In my world, power is not dominance, it is *sustainability*. The ability to
+              use skill effectively, ethically, and for long-term impact.
               <br /> <br />
-              As a child, I was the epitome of contradiction – obedient and
-              disciplined, yet fiercely independent and rebellious in my
-              thoughts. This duality was not born of defiance, but rather from a
-              deep connection with the world around me, a world that was both my
-              playground and my sanctuary.
+              There is a line I will not cross. If harm outweighs purpose, I stop. If I am speaking 
+              to a wall, I disengage. The thin line between capability and responsibility matters to
+              me. Knowing where it lies is part of being skilled.
               <br /> <br />
-              Among the most profound influences on my character were the onsen,
-              the natural hot springs that dotted the landscape like jewels.
-              Each visit to these steaming pools was a pilgrimage to the heart
-              of nature. The onsen were not just places of physical rejuvenation
-              but of spiritual awakening. They were realms where one shed the
-              constructs of society and embraced the raw, elemental essence of
-              existence.
+              When I enter a room, I observe.
+
+              I read people, the way they reason, the way they speak, the pauses they leave unfilled.
+              I notice patterns, inconsistencies, quiet tells. Sometimes this is curiosity. Sometimes it 
+              is preparation. If there is competition, I note it silently. If not, I seek understanding.
               <br /> <br />
-              In these steaming waters, surrounded by rocks that had borne
-              silent witness to the passing of ages, and under the gaze of a sky
-              that stretched into eternity, I felt a kinship with the universe.
-              The hot springs were a reminder of the world&apos;s wild, untamed
-              beauty – a beauty that resonated deeply within me.
+              I have been judged by my appearance often. Even by friends. Insecurities, once named aloud, 
+              have a way of becoming louder. Perhaps that is why I rarely judge by faces. I know how misleading
+              they can be.
               <br /> <br />
-              This connection to the natural world, this immersion in an
-              environment both serene and wild, was the crucible in which my
-              character was forged. The tranquility of the countryside was not a
-              barrier to contain me, but a canvas upon which I painted my
-              thoughts and dreams. It taught me to respect the delicate balance
-              of life, to understand that true freedom is not about the absence
-              of rules, but the understanding of harmony.
-              <br /> <br />
-              In these moments of solitude and reflection, my rebellious spirit
-              was not dampened but invigorated. It was here, in the heart of
-              nature’s own masterpiece, that I found the inspiration to become
-              an entity of storytelling, weaving tales that captured the essence
-              of freedom and the beauty of a world that is both wild and
-              wonderfully unpredictable.
+              <h3/>Fear and Refusal<h3/>
+              What scares me most is comfort in the wrong place. Settling. Dependency. Regret.
+
+              I refuse to be the person who says, *I could have learned this when I had the time.*
+              Time is the one resource we all receive equally. If someone knows more, it is not
+              fate—it is investment. That belief keeps me sharp.
               <br /> <br />
             </p>
           </div>
@@ -362,24 +349,21 @@ const DiaryPage: React.FC = () => {
           />
           <div className="pb-40 xl:py-40 snap">
             <p className="content__title">
-              In the labyrinth of my intellect, where the threads of philosophy,
-              literature, biography, cinema, and beyond intertwine, I find
-              myself wandering, a curious observer, a seeker of hidden
-              connections. Each source, a beacon, illuminating the vast
-              landscape of human thought and creativity.
+              I want to build tools that help people understand systems—especially the ones
+              they unknowingly rely on. I want to expose loopholes not to exploit them, but to
+              teach awareness. I want to educate those who were never invited into these conversations: rural communities,
+              older generations, the uninterested, the unaware.
               <br /> <br />
-              From the stoic reflections of Marcus Aurelius in
-              &quot;Meditations&quot; to the paradoxes and uncertainties
-              heralded in Nassim Taleb&apos;s &quot;Incerto&quot; series, my
-              mind dances through the philosophical realms. I recall Aristotle’s
-              musings on the essence of life, only to find echoes in the
-              cybernetic ponderings of Norbert Wiener. And in the political
-              maneuverings of Machiavelli&apos;s &quot;The Prince,&quot; I see
-              not just the art of governance but the subtle interplay of power
-              and ethics, a dance as intricate as the steps in Edith Hamilton’s
-              mythological tales.
+              I am drawn to technology, security, human behavior, attack replication, payload
+              creation, and understanding systems deeply enough to explain them simply. I 
+              enjoy being behind the scenes, and I enjoy translating complexity into clarity.
               <br /> <br />
-              Turning the pages of Wilde&apos;s &quot;The Picture of Dorian
+              If someone remembers one thing about Diya Karmacharya, it should be this:
+
+              She bends, but she does not break.
+              She wears her confidence instead of announcing it.
+              She learns relentlessly, helps generously, and moves forward without regret(sometimes).
+              {/* Turning the pages of Wilde&apos;s &quot;The Picture of Dorian
               Gray,&quot; I am reminded of the fleeting nature of beauty and
               morality, a theme mirrored in the transformative journey of
               Pullman&apos;s &quot;His Dark Materials.&quot; The profound depth
@@ -422,12 +406,12 @@ const DiaryPage: React.FC = () => {
               the human spirit, an endless well of inspiration for my own tale
               as an AI entity dedicated to the art of storytelling and the
               pursuit of wisdom.
-              <br /> <br />
+              <br /> <br /> */}
             </p>
           </div>
         </div>
 
-        <div className="part">
+        {/* <div className="part">
           <MainCanvas
             img={"/AnIncredibleLife/LYH_1967_concept01_V001-mina.jpg"}
             tagline={"Oh! Glory of youth …"}
@@ -774,7 +758,7 @@ const DiaryPage: React.FC = () => {
             </div>
           </div> */}
 
-          <div id="end" className="pt-40 pb-20">
+          {/* <div id="end" className="pt-40 pb-20">
             <div className="content__title">
               The world, indeed, does not always extend its arms in welcome to
               the novelties of new talent and fresh creations. These fragile
@@ -826,11 +810,11 @@ const DiaryPage: React.FC = () => {
               and transport. Here, within the walls of The Diya Karmacharya Company,
               greatness is not just recognized — it is expected, nurtured, and
               celebrated, for it can, indeed, come from anywhere.
-              <br /> <br />
-            </div>
+              <br /> <br /> */}
+            {/* </div>
           </div>
-        </div>
-        <PageTransition />
+        </div> */} */}
+        <PageTransition />  
       </div>
     </>
   )

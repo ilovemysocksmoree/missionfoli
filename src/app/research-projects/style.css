@@ -4,7 +4,26 @@
   color: #00ff00;
   padding: 2rem;
   font-family: 'CourierPrime-Regular', 'Courier New', monospace;
-  overflow-y: auto;
+  
+  /* FIXED: Remove overflow-y: visible and let content flow naturally */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Ensure the layout doesn't clip the scroll */
+:global(body), :global(html) {
+  overflow-y: auto; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+/* IMPORTANT: Make sure your layout wrapper doesn't restrict height */
+.layout-content-wrapper {
+  min-height: 100vh;
+  height: auto;
+  overflow-y: auto; /* Allow scrolling if needed */
 }
 
 /* Header Styles */

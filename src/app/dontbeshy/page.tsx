@@ -146,11 +146,11 @@ const DiaryPage = ({}) => {
   const soundPaths = ["whatdog.mp3"]
   const imagePaths = [
     "egg-head.png",
-    "hello.gif",
-    "lyrawalk2.gif",
-    "luigitoadpeach.png",
-    "panda.png",
-    "trunks.png",
+    "thisone.gif",
+    "itsfine.gif",
+    "side-eye-dog-suspicious-look.gif",
+    "nofrog.gif",
+    "stop-it-get-some-help-just-stop.gif",
   ]
   const [images, setImages] = React.useState<
     {src: string; x: number; y: number}[]
@@ -266,10 +266,10 @@ const DiaryPage = ({}) => {
             <div className="uppercase flex items-end">
               Contacts
               <br />
-              hello@thehanasachikocompany.com
+              www.linkedin.com/in/diya-karmacharya
             </div>{" "}
             <div className="uppercase flex items-end">
-              Location <br /> 4, Privet Drive, Little Whinging, Surrey{" "}
+              Location <br /> 4, Kathmandu{" "}
             </div>{" "}
           </div>
           <div
@@ -277,11 +277,11 @@ const DiaryPage = ({}) => {
             id="overlayHello"
             ref={overlayRef}
           >
-            <p className="helloFont">H</p>
-            <p className="helloFont">E</p>
-            <p className="helloFont">L</p>
-            <p className="helloFont">L</p>
-            <p className="helloFont">O</p>
+            <p className="helloFont">N</p>
+            <p className="helloFont">A</p>
+            <p className="helloFont">I</p>
+            <p className="helloFont">I</p>
+            {/* <p className="helloFont">:D</p> */}
           </div>
         </div>
         <div
@@ -476,7 +476,7 @@ const DiaryPage = ({}) => {
             {" "}
             <div className="uppercase">
               SAY HI : <br />
-              <span className=""> hello@thehanasachikocompany.com</span>
+              <span className=""> www.linkedin.com/in/diya-karmacharya</span>
             </div>{" "}
             <div className="uppercase"></div>{" "}
             <div className="uppercase">
@@ -494,7 +494,7 @@ const DiaryPage = ({}) => {
               </a>
               <br />{" "}
               <a
-                href="https://ae.linkedin.com/in/oussamaammar"
+                href="www.linkedin.com/in/diya-karmacharya"
                 target="_blank"
                 className="footerLink"
                 rel="noopener noreferrer"
@@ -516,10 +516,10 @@ const DiaryPage = ({}) => {
           <div className="flex flex-col justify-end align-end h-screen w-full -mt-8">
             <div className="py-8">
               <div className="text-7xl text-center uppercase relative z-10">
-                Diya Karmacharya - 花·幸子{" "}
+                Diya Karmacharya - 花火 {" "}
                 <span>
                   <img
-                    src="lyrawalk2.gif"
+                    src="diya.png"
                     alt=""
                     id="lyrawalk"
                     className="relative -z-10"

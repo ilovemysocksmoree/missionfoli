@@ -46,9 +46,9 @@ html {
 
 #lyrawalk {
   display: inline;
-  width: calc(418px / 2);
-  height: calc(597px / 2);
-  margin-top: -14rem;
+  width: calc(390px / 2);
+  height: calc(500px / 2);
+  margin-top: -10rem;
 }
 
 #footer-contact {

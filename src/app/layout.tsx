@@ -39,7 +39,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     "/dontbeshy": {
       title: "A Storytelling Company | Diya Karmacharya | Don't Be Shy",
       description:
-        "Let us imbibe a hot steaming cup of conversation, reach me out to with my crew for crafting chapters untold, yet eager to be heard.",
+        "Let us imbibe a hot steaming cup of conversation, reach me out.",
     },
   };
 
@@ -48,9 +48,9 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    name: "Diya Karmacharya Studio",
-    url: "https://thehanasachikocompany.com",
-    description: "A Storytelling Company.",
+    name: "Diya Karmacharya",
+    url: "https://diyakarmacharya.com.np",
+    description: "A Lady.",
     image:
       "https://thehanasachikocompany.com/_next/image?url=%2FHanaSachikoBrand.jpg&w=640&q=75",
     creator: {

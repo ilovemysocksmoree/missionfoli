@@ -289,10 +289,10 @@ const DiaryPage: React.FC = () => {
               <br /> <br />
               I avoid people not out of arrogance, but experience. I have seen how easily kindness
               becomes convenience. How quickly attention fades once a need is met. Once I recognize 
-              this pattern, I distance myself—not dramatically, just decisively.
+              this pattern, I distance myself, not dramatically, just decisively.
               <br /> <br />
-              Solitude does not always bring relief, but it brings clarity. With the right people—those who 
-              understand, who care—simple things are enough. Food. Conversation. Presence.
+              Solitude does not always bring relief, but it brings clarity. With the right people, those who 
+              understand, who care simple things are enough. Food. Conversation. Presence.
               <br/><br />
               When restlessness finds me, I cook. I dance. I sketch. I hum. As a child, I wanted a guitar. I
               was told excellence had to come first. Years later, I bought one with my own salary. Some rewards 
@@ -335,7 +335,7 @@ const DiaryPage: React.FC = () => {
 
               I refuse to be the person who says, *I could have learned this when I had the time.*
               Time is the one resource we all receive equally. If someone knows more, it is not
-              fate—it is investment. That belief keeps me sharp.
+              fate, it is investment. That belief keeps me sharp.
               <br /> <br />
             </p>
           </div>
@@ -349,7 +349,7 @@ const DiaryPage: React.FC = () => {
           />
           <div className="pb-40 xl:py-40 snap">
             <p className="content__title">
-              I want to build tools that help people understand systems—especially the ones
+              I want to build tools that help people understand systems, especially the ones
               they unknowingly rely on. I want to expose loopholes not to exploit them, but to
               teach awareness. I want to educate those who were never invited into these conversations: rural communities,
               older generations, the uninterested, the unaware.

@@ -10,6 +10,15 @@
   width: 100%;
 }
 
+/* Section Spacing */
+.projects-section {
+  margin-bottom: 4rem;
+}
+
+.certifications-section {
+  margin-bottom: 2rem;
+}
+
 /* Ensure the layout doesn't clip the scroll */
 :global(body), :global(html) {
   overflow-y: auto; 
@@ -53,8 +62,45 @@
   letter-spacing: 0.05em;
 }
 
+/* Certifications Header Styles */
+.certifications-header {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.certifications-title {
+  font-family: 'CourierPrime-Regular', 'Courier New', monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ff00;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  filter: blur(0.5px);
+}
+
+.certifications-subtitle {
+  font-size: 0.9rem;
+  color: #888888;
+  margin: 0;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
 /* Projects Grid */
 .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Certifications Grid */
+.certifications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1.5rem;
@@ -76,7 +122,28 @@
   justify-content: space-between;
 }
 
+/* Certification Card */
+.certification-card {
+  background: #0a0a0a;
+  border: 1px solid #00ff00;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .project-card:hover {
+  border-color: #00ff88;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  transform: translateY(-2px);
+  background: #0f0f0f;
+}
+
+.certification-card:hover {
   border-color: #00ff88;
   box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
   transform: translateY(-2px);
@@ -145,6 +212,25 @@
   margin: 0;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  color: #666666;
+  margin-top: 0.5rem;
+}
+
+.card-date,
+.card-issuer,
+.card-credential-id,
+.card-valid-until {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 255, 0, 0.3);
 }
 
 /* Card Footer */
@@ -282,4 +368,26 @@
 
 .research-projects-container::-webkit-scrollbar-thumb:hover {
   background: #00ff88;
+}
+
+/* Certification Status Colors */
+.cert-status-active {
+  color: #00ff00;
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.cert-status-verified {
+  color: #00ffff;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+.cert-status-pending {
+  color: #ffaa00;
+  background: rgba(255, 170, 0, 0.1);
+  animation: pulse 2s infinite;
+}
+
+.cert-status-expired {
+  color: #ff0000;
+  background: rgba(255, 0, 0, 0.1);
 }

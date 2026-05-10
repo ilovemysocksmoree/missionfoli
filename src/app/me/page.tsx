@@ -206,7 +206,7 @@ const DiaryPage: React.FC = () => {
                 </figcaption>
               </div>
               <h1 data-hover="Lyra Haruto" id="printemps">
-                花·幸子
+                ディヤ
               </h1>
             </div>
             <div
@@ -251,7 +251,7 @@ const DiaryPage: React.FC = () => {
               I was born in Kathmandu, in the same home where I grew up. My life did not unfold across 
               cities or countries, but across **mindsets**. Stability shaped me more than movement ever
               could.My grandmother never called me Diya. To her, I was *Jaya*. The name stayed with me in
-              a quiet, grounding way—another reminder that identity is often layered, not singular. I grew 
+              a quiet, grounding way, another reminder that identity is often layered, not singular. I grew 
               up surrounded by family, expectations, and structure. Travel never tempted me much. People did
               not either. They are everywhere, after all. <br />
               <br />I learned early that at the end of every interaction, every performance, every attempt 

@@ -82,7 +82,7 @@ const ResearchProjectsPage = ({ }) => {
     {
       id: "005",
       title: "Vuln-App",
-      description: "Frontend application for AD Shield security platform",
+      description: "Log4Shell ",
       category: "PROJECT",  
       status: "DEPLOYED",
       icon: "code",

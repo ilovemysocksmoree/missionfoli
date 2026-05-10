@@ -180,6 +180,7 @@ form{
 }
 
 .lyrart{
+  font-family: monospace;
   font-size: 0.7rem; /* Adjust this value to change size (smaller = smaller art) */
   line-height: 1; /* Adjust line spacing */
   white-space: pre; /* Preserve ASCII art formatting */
@@ -293,7 +294,7 @@ MediaQuery General
   }
 
 }
-@media (max-width: 1531px){
+@media (max-width: 760px){
   .lyrart{
     display: none;
   }

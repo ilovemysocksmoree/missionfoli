@@ -62,6 +62,18 @@
   letter-spacing: 0.05em;
 }
 
+.github-link {
+  color: #00ff00;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ff0033;
+  transition: border-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.github-link:hover {
+  border-bottom-color: #00ff00;
+  text-shadow: 0 0 4px #00ff0055;
+}
+
 /* Certifications Header Styles */
 .certifications-header {
   margin-bottom: 3rem;

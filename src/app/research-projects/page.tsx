@@ -46,24 +46,6 @@ const ResearchProjectsPage = ({ }) => {
     {
       id: "001",
       title: "ADSCANNER",
-      description: "Active Directory security scanner built with Go",
-      category: "PROJECT",
-      status: "ACTIVE",
-      icon: "lock",
-      link: "https://github.com/ilovemysocksmoree/ADScanner",
-    },
-    {
-      id: "002",
-      title: "KageNezumi",
-      description: "This is a rat for android.",
-      category: "PROJECT",
-      status: "LIVE",
-      icon: "code",
-      link: "https://github.com/ilovemysocksmoree/KageNezumi",
-    },
-    {
-      id: "003",
-      title: "ADSCANNER_TS",
       description: "Active Directory scanner implementation in TypeScript",
       category: "PROJECT",
       status: "ACTIVE",
@@ -71,39 +53,62 @@ const ResearchProjectsPage = ({ }) => {
       link: "https://github.com/ilovemysocksmoree/ADscanner-",
     },
     {
-      id: "004",
-      title: "MCHATAPP",
-      description: "Modern real-time chat application built with Next.js 14, TypeScript, and Tailwind CSS",
+      id: "002",
+      title: "Vuln-App",
+      description: "Log4Shell ",
       category: "PROJECT",
+      status: "DEPLOYED",
+      icon: "code",
+      link: "https://github.com/ilovemysocksmoree/Vuln-App",
+    },
+  ]
+
+  // GitHub showcase projects - public repos featured from github.com/ilovemysocksmoree
+  const githubUrl = "https://github.com/ilovemysocksmoree"
+  const githubProjects: Project[] = [
+    {
+      id: "GH001",
+      title: "ADSCANNER",
+      description: "Active Directory security scanner built with Go",
+      category: "GITHUB",
+      status: "ACTIVE",
+      icon: "lock",
+      link: "https://github.com/ilovemysocksmoree/ADscanner-",
+    },
+    {
+      id: "GH002",
+      title: "KAGENEZUMI",
+      description: "Android RAT for security research",
+      category: "GITHUB",
+      status: "LIVE",
+      icon: "code",
+      link: "https://github.com/ilovemysocksmoree/KageNezumi",
+    },
+    {
+      id: "GH003",
+      title: "MCHATAPP",
+      description: "Modern real-time chat app built with Next.js 14, TypeScript, and Tailwind CSS",
+      category: "GITHUB",
       status: "LIVE",
       icon: "network",
       link: "https://github.com/ilovemysocksmoree/MChatapp",
     },
     {
-      id: "005",
-      title: "Vuln-App",
-      description: "Log4Shell ",
-      category: "PROJECT",  
-      status: "DEPLOYED",
-      icon: "code",
-      link: "https://github.com/ilovemysocksmoree/Vuln-App",
-    },
-    {
-      id: "006",
-      title: "AD-Connector-Core",
-      description: "Test repository for ADS development purposes",
-      category: "ARCHIVE",
-      status: "ARCHIVED",
-      icon: "code",
+      id: "GH004",
+      title: "LDAP CONNECTOR",
+      description: "LDAP / Active Directory connector core",
+      category: "GITHUB",
+      status: "ACTIVE",
+      icon: "database",
       link: "https://github.com/ilovemysocksmoree/AD-Connector-Core",
     },
     {
-      id: "007",
-      title: "Automations",
-      description: "Automations I have created to boost my efficiency at work.",
-      category: "ARCHIVE",
-      status: "ARCHIVED",
-      icon: "code",
+      id: "GH005",
+      title: "AUTOMATIONS",
+      description: "Scripts and automations that boost day-to-day workflow efficiency",
+      category: "GITHUB",
+      status: "ACTIVE",
+      icon: "terminal",
       link: "https://github.com/ilovemysocksmoree/automations",
     },
   ]
@@ -310,6 +315,56 @@ const ResearchProjectsPage = ({ }) => {
       <Sidebar />
       <Layout>
         <div className="research-projects-container">
+          {/* GitHub Section */}
+          <div className="projects-section">
+            <div className="projects-header">
+              <h1 className="projects-title">./ GITHUB</h1>
+              <p className="projects-subtitle">
+                {"// "}
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="github-link"
+                >
+                  github.com/ilovemysocksmoree
+                </a>
+              </p>
+            </div>
+
+            <div className="projects-grid">
+              {githubProjects.map((project) => (
+                <div
+                  key={project.id}
+                  className="project-card"
+                  onClick={() => project.link && window.open(project.link, '_blank')}
+                  style={{ cursor: project.link ? 'pointer' : 'default' }}
+                >
+                  <div className="card-header">
+                    <span className="card-id">{project.id}</span>
+                    <div className="card-icon">
+                      {getIcon(project.icon)}
+                    </div>
+                  </div>
+
+                  <div className="card-content">
+                    <h3 className="card-title">{project.title}</h3>
+                    <p className="card-category">{project.category}</p>
+                    {project.description && (
+                      <p className="card-description">{project.description}</p>
+                    )}
+                  </div>
+
+                  <div className="card-footer">
+                    <span className={`card-status status-${project.status.toLowerCase()}`}>
+                      {project.status}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Projects Section */}
           <div className="projects-section">
             {/* Header Section */}

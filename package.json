@@ -62,6 +62,7 @@
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
     "postcss": "^8.4.31",
+    "postcss-nesting": "^14.0.0",
     "prettier": "^3.0.3",
     "tailwindcss": "^3.3.5"
   },
